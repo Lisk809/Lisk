@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as r,N as o}from"./chunks/framework.64b480aa.js";const k=JSON.parse('{"title":"Lisk 简介","description":"","frontmatter":{},"headers":[],"relativePath":"intro.md","lastUpdated":1690289161000}'),a={name:"intro.md"},s=o("",4),i=[s];function n(_,c,l,d,p,h){return r(),e("div",null,i)}const m=t(a,[["render",n]]);export{k as __pageData,m as default};

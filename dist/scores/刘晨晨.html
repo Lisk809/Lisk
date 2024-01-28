@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ECharts</title> <!-- 引入 echarts.js -->
+        <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    </head>
+    <body><!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="main" style="width: 600px;height:400px;"></div>
+        <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        // 指定图表的配置项和数据
+option = {
+    title: {
+        text: '成绩分析雷达图'
+    },
+    tooltip: {},
+    legend: {
+        data: ['原始分', '平均分'],
+        right:'1%',
+        top:'5%',
+    },
+    radar: {
+        // shape: 'circle',
+        center:['50%','55%'],
+        name: {
+            textStyle: {
+                color: '#fff',
+                backgroundColor: '#999',
+                borderRadius: 3,
+                padding: [3, 5]
+            }
+        },
+        indicator: [
+            { name: '语文', max:150 },
+            { name: '数学', max:150},
+            { name: '英语', max: 120},
+            { name: '物理', max:70},
+            { name: '化学', max: 40},
+            { name: '政治', max: 80},
+            { name: '历史', max: 70}
+        ]
+    },
+    series: [{
+        name: '成绩分析',
+        type: 'radar',
+        // areaStyle: {normal: {}},
+        data: [
+            {
+                value: [125,144,96,62,33,74,66],
+                name: '原始分'
+            },
+            {
+                value:[116,120,76,50,31,60,51],
+                name: '平均分'
+            }
+            
+        ]
+    }]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+      
+        
+    </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "lisk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Lisk809/lisk",
+  "author": "Lisk <liskqwq@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "axios": "^1.4.0"
+  }
+}
