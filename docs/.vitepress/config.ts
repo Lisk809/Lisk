@@ -17,7 +17,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/index" },
       { text: "Intro", link: "/intro" },
-      { text: "Blog", items: [{ text: "JS中的比较", link: "/blog/compare" }] },
+      { text: "Blog", items: [{ text: "lambda 演算", link: "/blog/lambda" }] },
     ],
     sidebar: [
       {
@@ -27,7 +27,7 @@ export default defineConfig({
           { text: "Intro", link: "/intro" },
         ],
       },
-      { text: "Blog", items: [{ text: "JS中的比较", link: "/blog/compare" }] },
+      { text: "Blog", items: [{ text: "lambda 演算", link: "/blog/lambda" }] },
     ],
     socialLinks: [
       { icon: "github", link: "https://github.com/lisk809" },
@@ -51,9 +51,6 @@ export default defineConfig({
         timeStyle: "medium",
       },
     },
-    search: {
-      provider: "local",
-    },
     docFooter: {
       prev: "上一页",
       next: "下一页",
@@ -63,7 +60,10 @@ export default defineConfig({
   },
   markdown: {
     math: true,
-    theme: "one-dark-pro",
-    lineNumbers: true,
+//    theme: "one-dark-pro",
+//    lineNumbers: true,
   },
+  search: {
+    provider: "local",
+   }
 });
