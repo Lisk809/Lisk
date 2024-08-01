@@ -60,10 +60,13 @@ export default defineConfig({
   },
   markdown: {
     math: true,
-//    theme: "one-dark-pro",
-//    lineNumbers: true,
+    theme: "one-dark-pro",
+    lineNumbers: true,
   },
   search: {
     provider: "local",
+   }
+  sitemap: {
+    hostname: 'https://lisk.pages.dev'
    }
 });
