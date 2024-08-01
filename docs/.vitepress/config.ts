@@ -65,7 +65,7 @@ export default defineConfig({
   },
   search: {
     provider: "local",
-   }
+   },
   sitemap: {
     hostname: 'https://lisk.pages.dev'
    }
