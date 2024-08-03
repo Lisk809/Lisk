@@ -37,7 +37,7 @@ export default defineConfig({
       { icon: bilibili, link: "https://space.bilibili.com/1358312343" },
     ],
     footer: {
-      message: "Released under the MIT License.",
+      message: 'Released under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> License.',
       copyright: "Copyright © 2024 Lisk",
     },
     editLink: {
