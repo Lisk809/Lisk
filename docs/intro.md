@@ -1,12 +1,7 @@
-# Lisk 简介 {#KiviBot}
+---
+titleTemplate: Hi, I'm Lisk!
+---
 
+<Intro />
 
-
-`Lisk` 一个~~练习两年半~~的业余程序员崽，高中牲，来自中国安徽，主要领域：[Node.js](https://nodejs.com/), [Python](https://python.org/), [Vue](https://vuejs.org/)
-
-热爱代码，生活，诗歌，喜欢海子，徐志摩的诗，希望在繁忙的世界偷得闲暇一刻，午后掠影
-
-二次元捏ꈍ◡ꈍ，**芙莉莲**，**洛琪希**一生挚推
-
-> 没有不可治愈的伤痛，没有不能结束的沉沦，所有失去的，会以另一种方式归来
-            ——约翰·肖尔斯《许愿树》
+<p>Page design copyright © Evan You All rights reserved.</p>
