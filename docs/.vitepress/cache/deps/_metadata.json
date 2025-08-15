@@ -1,31 +1,73 @@
 {
-  "hash": "291249bc",
-  "configHash": "a5be8c8e",
-  "lockfileHash": "db623a00",
-  "browserHash": "b47a1c76",
+  "hash": "192dede3",
+  "configHash": "5d001e75",
+  "lockfileHash": "1298bc23",
+  "browserHash": "ec525eca",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "6dadb638",
+      "fileHash": "e5377abc",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "244007fe",
+      "fileHash": "0089169f",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "d458fa75",
+      "fileHash": "68559858",
+      "needsInterop": false
+    },
+    "@nolebase/vitepress-plugin-page-properties": {
+      "src": "../../../../node_modules/@nolebase/vitepress-plugin-page-properties/dist/client/index.mjs",
+      "file": "@nolebase_vitepress-plugin-page-properties.js",
+      "fileHash": "d3eff598",
+      "needsInterop": false
+    },
+    "@nolebase/vitepress-plugin-enhanced-readabilities/client": {
+      "src": "../../../../node_modules/@nolebase/vitepress-plugin-enhanced-readabilities/dist/client/index.mjs",
+      "file": "@nolebase_vitepress-plugin-enhanced-readabilities_client.js",
+      "fileHash": "ab05e4bb",
+      "needsInterop": false
+    },
+    "@shikijs/vitepress-twoslash/client": {
+      "src": "../../../../node_modules/@shikijs/vitepress-twoslash/dist/client.mjs",
+      "file": "@shikijs_vitepress-twoslash_client.js",
+      "fileHash": "2035316f",
+      "needsInterop": false
+    },
+    "vitepress-plugin-codeblocks-fold": {
+      "src": "../../../../node_modules/vitepress-plugin-codeblocks-fold/lib/index.js",
+      "file": "vitepress-plugin-codeblocks-fold.js",
+      "fileHash": "e132e61f",
+      "needsInterop": false
+    },
+    "@nolebase/vitepress-plugin-highlight-targeted-heading/client": {
+      "src": "../../../../node_modules/@nolebase/vitepress-plugin-highlight-targeted-heading/dist/client/index.mjs",
+      "file": "@nolebase_vitepress-plugin-highlight-targeted-heading_client.js",
+      "fileHash": "ee722283",
+      "needsInterop": false
+    },
+    "@nolebase/vitepress-plugin-inline-link-preview/client": {
+      "src": "../../../../node_modules/@nolebase/vitepress-plugin-inline-link-preview/dist/client/index.mjs",
+      "file": "@nolebase_vitepress-plugin-inline-link-preview_client.js",
+      "fileHash": "6aaf4acd",
+      "needsInterop": false
+    },
+    "canvas-confetti": {
+      "src": "../../../../node_modules/canvas-confetti/dist/confetti.module.mjs",
+      "file": "canvas-confetti.js",
+      "fileHash": "487c708d",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-PC4CEIVW": {
-      "file": "chunk-PC4CEIVW.js"
+    "chunk-HVR2FF6M": {
+      "file": "chunk-HVR2FF6M.js"
     }
   }
 }
