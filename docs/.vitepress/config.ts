@@ -1,11 +1,11 @@
 import { defineConfig } from "vitepress";
-import { join } from 'node:path'
+import { join } from "node:path";
 import { qq, bilibili, npm } from "./icons.ts";
-import { 
-	  GitChangelog, 
-	    GitChangelogMarkdownSection, 
-} from '@nolebase/vitepress-plugin-git-changelog/vite'
-import {PageProperties} from '@nolebase/vitepress-plugin-page-properties/vite'
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
+} from "@nolebase/vitepress-plugin-git-changelog/vite";
+import { PageProperties } from "@nolebase/vitepress-plugin-page-properties/vite";
 
 // https://vitepress.vuejs.org/config/app-configs
 export default defineConfig({
@@ -17,6 +17,9 @@ export default defineConfig({
     ["meta", { name: "theme-color", content: "#88619A" }],
   ],
   vite: {
+    ssr: {
+      noExternal: ["@nolebase/*"],
+    },
     plugins: [
       PageProperties(),
       GitChangelog({
