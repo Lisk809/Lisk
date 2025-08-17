@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Date from './Date.vue'
 import { data as posts } from './posts.data.js'
-import { Calendar } from "@element-plus/icons-vue"
+import { Calendar } from '@element-plus/icons-vue'
 import { useData } from 'vitepress'
 
 const { frontmatter } = useData()
@@ -20,21 +20,21 @@ const { frontmatter } = useData()
       </p>
     </div>
     <div v-for="post in posts">
-    <el-card style="max-width: 480px">
-      <template #header>
-        <div class="card-header">
-          <span>{{ post.title }}</span>
-        </div>
-	<el-badge v-for="tag in post.tags">
-		{{tag}}
-	</el-badge>
-      </template>
-       <p>{{post.content}}</p>
-      <template #footer
-        ><el-icon><Calendar /></el-icon>
-        <p>{{ post.date.string }}</p></template
-      >
-    </el-card>
-  </div>
+      <el-card style="max-width: 480px">
+        <template #header>
+          <div class="card-header">
+            <span>{{ post.title }}</span>
+          </div>
+          <el-badge v-for="tag in post.tags">
+            {{ tag }}
+          </el-badge>
+        </template>
+        <p>{{ post.content }}</p>
+        <template #footer
+          ><el-icon><Calendar /></el-icon>
+          <p>{{ post.date.string }}</p></template
+        >
+      </el-card>
+    </div>
   </div>
 </template>

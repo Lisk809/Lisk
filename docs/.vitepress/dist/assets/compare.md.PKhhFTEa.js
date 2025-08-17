@@ -1,4 +1,45 @@
-import{_ as p,C as i,c as l,o as h,j as a,G as e,av as k,a as r}from"./chunks/framework.B-lDWq_f.js";const m=JSON.parse('{"title":"JS 中的==和===","description":"","frontmatter":{},"headers":[],"relativePath":"compare.md","filePath":"compare.md","lastUpdated":null}'),d={name:"compare.md"};function o(g,s,c,E,u,y){const n=i("NolebasePageProperties"),t=i("NolebaseGitChangelog");return h(),l("div",null,[s[0]||(s[0]=a("h1",{id:"js-中的-和",tabindex:"-1"},[r("JS 中的==和=== "),a("a",{class:"header-anchor",href:"#js-中的-和","aria-label":'Permalink to "JS 中的==和==="'},"​")],-1)),e(n),s[1]||(s[1]=k(`<p>在网上冲浪时突然间看见了一个这样的题目(据说来自阿里云面试题)</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki shiki-themes github-light github-dark vp-code" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> a </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> ?</span></span>
+import {
+  _ as p,
+  C as i,
+  c as l,
+  o as h,
+  j as a,
+  G as e,
+  av as k,
+  a as r
+} from './chunks/framework.B-lDWq_f.js'
+const m = JSON.parse(
+    '{"title":"JS 中的==和===","description":"","frontmatter":{},"headers":[],"relativePath":"compare.md","filePath":"compare.md","lastUpdated":null}'
+  ),
+  d = { name: 'compare.md' }
+function o(g, s, c, E, u, y) {
+  const n = i('NolebasePageProperties'),
+    t = i('NolebaseGitChangelog')
+  return (
+    h(),
+    l('div', null, [
+      s[0] ||
+        (s[0] = a(
+          'h1',
+          { id: 'js-中的-和', tabindex: '-1' },
+          [
+            r('JS 中的==和=== '),
+            a(
+              'a',
+              {
+                class: 'header-anchor',
+                href: '#js-中的-和',
+                'aria-label': 'Permalink to "JS 中的==和==="'
+              },
+              '​'
+            )
+          ],
+          -1
+        )),
+      e(n),
+      s[1] ||
+        (s[1] = k(
+          `<p>在网上冲浪时突然间看见了一个这样的题目(据说来自阿里云面试题)</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki shiki-themes github-light github-dark vp-code" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> a </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> ?</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">a</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> &amp;&amp;</span></span>
@@ -9,4 +50,12 @@ import{_ as p,C as i,c as l,o as h,j as a,G as e,av as k,a as r}from"./chunks/fr
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">valueOf</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(){</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    return</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">.n</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">++</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div><p>大功告成, 此时你会发现打印的就是<code>true</code>了</p><h2 id="总结" tabindex="-1">总结 <a class="header-anchor" href="#总结" aria-label="Permalink to &quot;总结&quot;">​</a></h2><p>如果==判断的对象是object 首先会调用.valueOf方法，如果依然是object, 调用toString</p>`,24)),e(t)])}const f=p(d,[["render",o]]);export{m as __pageData,f as default};
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div><p>大功告成, 此时你会发现打印的就是<code>true</code>了</p><h2 id="总结" tabindex="-1">总结 <a class="header-anchor" href="#总结" aria-label="Permalink to &quot;总结&quot;">​</a></h2><p>如果==判断的对象是object 首先会调用.valueOf方法，如果依然是object, 调用toString</p>`,
+          24
+        )),
+      e(t)
+    ])
+  )
+}
+const f = p(d, [['render', o]])
+export { m as __pageData, f as default }

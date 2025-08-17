@@ -5,61 +5,61 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import {
   PageProperties,
   PagePropertiesMarkdownSection
-} from '@nolebase/vitepress-plugin-page-properties/vite';
+} from '@nolebase/vitepress-plugin-page-properties/vite'
 import {
   GitChangelog,
-  GitChangelogMarkdownSection,
-} from '@nolebase/vitepress-plugin-git-changelog/vite';
-import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it';
-import timeline from 'vitepress-markdown-timeline';
-import taskLists from "markdown-it-task-lists";
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons';
-import { transformerTwoslash } from '@shikijs/vitepress-twoslash';
+  GitChangelogMarkdownSection
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
+import { InlineLinkPreviewElementTransform } from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
+import timeline from 'vitepress-markdown-timeline'
+import taskLists from 'markdown-it-task-lists'
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin
+} from 'vitepress-plugin-group-icons'
+import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
 
-import { qq, bilibili, npm } from "./icons.ts";
-import { join } from "node:path";
+import { qq, bilibili, npm } from './icons.ts'
+import { join } from 'node:path'
 
 export default defineConfig({
   title: "Lisk's Blog",
-  titleTemplate: ":title - (=^▽^=)",
+  titleTemplate: ':title - (=^▽^=)',
   description: "Lisk's Blog, welcome to visit!👋",
   head: [
     [
-      "link",
+      'link',
       {
-        rel: "icon",
-        href: "/favicon.ico",
-      },
+        rel: 'icon',
+        href: '/favicon.ico'
+      }
     ],
     [
-      "meta",
+      'meta',
       {
-        name: "theme-color",
-        content: "#88619A",
-      },
-    ],
+        name: 'theme-color',
+        content: '#88619A'
+      }
+    ]
   ],
-  lang: "zh-CN",
+  lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
   vite: {
     ssr: {
-      noExternal: [
-        '@nolebase/*',
-        'element-plus'
-      ],
+      noExternal: ['@nolebase/*', 'element-plus']
     },
     plugins: [
       AutoImport({
-      resolvers: [ElementPlusResolver()],
-    }),
-    Components({
-      resolvers: [ElementPlusResolver()],
-    }),
+        resolvers: [ElementPlusResolver()]
+      }),
+      Components({
+        resolvers: [ElementPlusResolver()]
+      }),
       GitChangelog({
         maxGitLogCount: 2000,
-        repoURL: () => 'https://github.com/Lisk809/Lisk',
+        repoURL: () => 'https://github.com/Lisk809/Lisk'
       }),
       GitChangelogMarkdownSection({
         exclude: (id) => id.endsWith('index.md'),
@@ -67,23 +67,20 @@ export default defineConfig({
           // 禁用页面历史
           disableChangelog: false,
           // 禁用贡献者
-          disableContributors: true,
-        },
+          disableContributors: true
+        }
       }) as any,
       PageProperties(),
       PagePropertiesMarkdownSection({
-        excludes: [
-          'index.md',
-          'intro.md'
-        ],
+        excludes: ['index.md', 'intro.md']
       }),
       groupIconVitePlugin({
         customIcon: {
           ts: 'logos:typescript',
           js: 'logos:javascript', //js图标
           md: 'logos:markdown', //markdown图标
-          css: 'logos:css-3', //css图标
-        },
+          css: 'logos:css-3' //css图标
+        }
       })
     ]
   },
@@ -99,100 +96,98 @@ export default defineConfig({
       // 代码组图标
       md.use(groupIconMdPlugin)
     },
-    codeTransformers: [
-      transformerTwoslash()
-    ]
+    codeTransformers: [transformerTwoslash()]
   },
   themeConfig: {
-    logo: "/lisk.png",
+    logo: '/lisk.png',
     nav: [
       {
-        text: "Home",
-        link: "/index",
+        text: 'Home',
+        link: '/index'
       },
       {
-        text: "Intro",
-        link: "/intro",
+        text: 'Intro',
+        link: '/intro'
       },
       {
-        text: "Blog",
+        text: 'Blog',
         items: [
           {
-            text: "lambda 演算",
-            link: "/posts/lambda",
-          },
-        ],
-      },
+            text: 'lambda 演算',
+            link: '/posts/lambda'
+          }
+        ]
+      }
     ],
     sidebar: [
       {
-        text: "Cordis",
+        text: 'Cordis',
         items: [
           {
-            text: "Home",
-            link: "/index",
+            text: 'Home',
+            link: '/index'
           },
           {
-            text: "Intro",
-            link: "/intro",
-          },
-        ],
+            text: 'Intro',
+            link: '/intro'
+          }
+        ]
       },
       {
-        text: "Blog",
+        text: 'Blog',
         items: [
           {
-            text: "lambda 演算",
-            link: "/posts/lambda",
-          },
-        ],
-      },
+            text: 'lambda 演算',
+            link: '/posts/lambda'
+          }
+        ]
+      }
     ],
     socialLinks: [
       {
-        icon: "github",
-        link: "https://github.com/lisk809",
+        icon: 'github',
+        link: 'https://github.com/lisk809'
       },
       {
-        icon: "twitter",
-        link: "https://x.com/Lisk325301",
+        icon: 'twitter',
+        link: 'https://x.com/Lisk325301'
       },
       {
         icon: npm,
-        link: "https://www.npmjs.com/~lisk809",
+        link: 'https://www.npmjs.com/~lisk809'
       },
       {
         icon: qq,
-        link: "https://qm.qq.com/q/ddE5NFqmJy",
+        link: 'https://qm.qq.com/q/ddE5NFqmJy'
       },
       {
         icon: bilibili,
-        link: "https://space.bilibili.com/1358312343",
-      },
+        link: 'https://space.bilibili.com/1358312343'
+      }
     ],
     footer: {
       message:
         'Released under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> License.',
-      copyright: "Copyright © 2024 Lisk",
+      copyright: 'Copyright © 2024 Lisk'
     },
-    
+
     editLink: {
-      pattern: "https://github.com/lisk809/Lisk/edit/main/docs/:path",
-      text: "Edit this page on GitHub",
+      pattern: 'https://github.com/lisk809/Lisk/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
     },
     lastUpdated: {
-      text: "Updated at",
+      text: 'Updated at',
       formatOptions: {
-        dateStyle: "full",
-        timeStyle: "medium",
-      },
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
     },
     docFooter: {
-      prev: "上一页",
-      next: "下一页",
+      prev: '上一页',
+      next: '下一页'
     },
     outline: 2,
-    outlineTitle: "大纲",
+    outlineTitle: '大纲'
   },
   sitemap: {
     hostname: 'https://lisks.icu/',

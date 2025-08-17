@@ -1,5 +1,5 @@
 <script>
-import "../style/rubik.css";
+import '../style/rubik.css'
 </script>
 <template>
   <div id="intro">
@@ -7,28 +7,37 @@ import "../style/rubik.css";
     <p style="font-weight: 500; font-size: 2.2em">My name is Lisk Rynn.</p>
     <p>
       I am a developer due to my hobby, living in Anhui, China.Interested in
-      <a href="https://vuejs.org" target="_blank" class="no-icon">Vue.js</a> the frontend build
-      tool <a href="https://vitejs.dev/" target="_blank" class="no-icon">Vite</a>,
-      <a href="https://nodejs.org/" target="_blank" class="no-icon">Node.js</a> ,
-      <a href="https://typescript.org/" target="_blank" class="no-icon">TypeScript</a> and
+      <a href="https://vuejs.org" target="_blank" class="no-icon">Vue.js</a> the
+      frontend build tool
+      <a href="https://vitejs.dev/" target="_blank" class="no-icon">Vite</a>,
+      <a href="https://nodejs.org/" target="_blank" class="no-icon">Node.js</a>
+      ,
+      <a href="https://typescript.org/" target="_blank" class="no-icon"
+        >TypeScript</a
+      >
+      and
       <a href="https://python.org/" target="_blank" class="no-icon">Python</a>
       my work is open source and publicly available on
-      <a href="https://github.com/lisk809" target="_blank" class="no-icon">GitHub</a>. If you
-      are interested in my project, please give it to a star.
+      <a href="https://github.com/lisk809" target="_blank" class="no-icon"
+        >GitHub</a
+      >. If you are interested in my project, please give it to a star.
     </p>
     <p>
       You can follow me on
-      <a href="https://twitter.com/Lisk325301" target="_blank" class="no-icon">X / Twitter</a>
+      <a href="https://twitter.com/Lisk325301" target="_blank" class="no-icon"
+        >X / Twitter</a
+      >
       where I mostly post about my daily life and frontend technologies. My name
       is Lisk, pronounced as /lɛtske/.It comes from my Chinese name.
     </p>
     <p>
       Besides developing my life, I am still a high school student.I like
       watching movies and listening to songs every day.Do you know
-      <a href="//www.taylorswift.com/" target="_blank" class="no-icon">Taylor Swift</a>?
-      I'm a fan of hers.You might be able to describe me in terms of ACG. Do you like poetry and
-      literature?If possible, I hope we can share and write together about
-      Haizi, Xu Zhimo, Shi Tiesheng and Shakespeare.
+      <a href="//www.taylorswift.com/" target="_blank" class="no-icon"
+        >Taylor Swift</a
+      >? I'm a fan of hers.You might be able to describe me in terms of ACG. Do
+      you like poetry and literature?If possible, I hope we can share and write
+      together about Haizi, Xu Zhimo, Shi Tiesheng and Shakespeare.
     </p>
     <p>The world is splendid and grand. Welcome to meet you.</p>
     <cite
@@ -41,16 +50,16 @@ import "../style/rubik.css";
 <style scoped>
 #intro {
   font-family:
-    "Rubik",
+    'Rubik',
     -apple-system,
     BlinkMacSystemFont,
-    "Segoe UI",
+    'Segoe UI',
     Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
+    'Open Sans',
+    'Helvetica Neue',
     sans-serif;
   font-size: calc(10px + 0.33vw);
   -webkit-font-smoothing: antialiased;
@@ -75,7 +84,7 @@ a {
   position: relative;
 }
 a::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   top: 66%;
@@ -84,7 +93,6 @@ a::after {
   bottom: 0;
   transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
   background-color: rgba(79, 192, 141, 0.5);
-
 }
 a:hover::after {
   top: 0%;

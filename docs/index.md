@@ -42,10 +42,12 @@ features:
     title: 小提琴萌新
     details: 浅学中...
 ---
+
 ::: tip
 近期文章📃
 :::
 <Home />
+
 <style>
 :root {
   --vp-home-hero-name-color: transparent;
