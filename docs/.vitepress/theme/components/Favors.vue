@@ -199,7 +199,7 @@
           },
           {
             id: 11,
-            src: '/qzay.png',
+            src: '/ay.png',
             title: '千早爱音',
             description: '《BanG Dream!》'
           },
@@ -214,6 +214,24 @@
             src: '/fnn.png',
             title: '芙宁娜',
             description: '《原神》'
+          },
+          {
+            id: 14,
+            src: '/ylnx.png',
+            title: '友利奈绪',
+            description: '《夏洛特Charlotte》'
+          },
+          {
+            id: 15,
+            src: '/kn.png',
+            title: '牧濑红莉栖',
+            description: '《命运石之门》'
+          },
+          {
+            id: 16,
+            src: '/frieren.png',
+            title: '芙莉莲',
+            description: '《葬送的芙莉莲》'
           },
         ])
         
