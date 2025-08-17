@@ -4,7 +4,6 @@ import { h, type Plugin } from 'vue';
 import { useData, useRoute } from 'vitepress';
 import type { EnhanceAppContext } from 'vitepress';
 
-
 import { NolebaseGitChangelogPlugin, Options } from '@nolebase/vitepress-plugin-git-changelog/client';
 import { NolebasePagePropertiesPlugin } from '@nolebase/vitepress-plugin-page-properties';
 import { NolebaseEnhancedReadabilitiesMenu, NolebaseEnhancedReadabilitiesScreenMenu, } from '@nolebase/vitepress-plugin-enhanced-readabilities/client';
@@ -29,7 +28,9 @@ import 'vitepress-plugin-codeblocks-fold/style/index.css';
 import '@nolebase/vitepress-plugin-page-properties/client/style.css';
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css';
 import Confetti from "./components/Confetti.vue";
-
+import Intro from "./components/Intro.vue";
+import Home from "./Home.vue"
+import Word from "./components/Words.vue";
 import Hero from '../theme/Layout.vue';
 import NCard from './components/NCard.vue';
 
@@ -39,8 +40,9 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // 'aside-outline-before': () => h(ShareButton),
-      'home-hero-before': () => h(Hero),
+      //'home-hero-before': () => h(Hero),
       //'layout-bottom': () => h(HomeFooter, { Footer_Data }),
+      'home-hero-info-after': () => h(Word),
       'nav-bar-content-after': () => h(NolebaseEnhancedReadabilitiesMenu),
       'nav-screen-content-after': () => h(NolebaseEnhancedReadabilitiesScreenMenu),
       'layout-top': () => [h(NolebaseHighlightTargetedHeading)],
@@ -56,6 +58,8 @@ export default {
     } as Options);
     app.use(TwoslashFloatingVue);
     app.component('NCard', NCard);
+    app.component("Intro", Intro);
+    app.component("Home", Home);
     app.use(TwoslashFloatingVue as unknown as Plugin);
     app.use(NolebaseGitChangelogPlugin);
     app.provide(InjectionKey, {

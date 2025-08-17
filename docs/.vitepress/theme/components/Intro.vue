@@ -26,8 +26,7 @@ import "../style/rubik.css";
       Besides developing my life, I am still a high school student.I like
       watching movies and listening to songs every day.Do you know
       <a href="//www.taylorswift.com/" target="_blank" class="no-icon">Taylor Swift</a>?
-      I'm a fan of hers.You might be able to describe me in terms of ACG.My
-      favorite character is Frieren, Loxy, Conan. Do you like poetry and
+      I'm a fan of hers.You might be able to describe me in terms of ACG. Do you like poetry and
       literature?If possible, I hope we can share and write together about
       Haizi, Xu Zhimo, Shi Tiesheng and Shakespeare.
     </p>
