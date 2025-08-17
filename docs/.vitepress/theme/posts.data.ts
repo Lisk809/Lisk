@@ -21,6 +21,8 @@ export default createContentLoader('posts/*.md', {
         title: frontmatter.title,
         url,
         excerpt,
+        content: frontmatter.content,
+        tags: frontmatter.tags,
         date: formatDate(frontmatter.date)
       }))
       .sort((a, b) => b.date.time - a.date.time)

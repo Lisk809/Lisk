@@ -22,17 +22,17 @@ const { frontmatter } = useData()
     <div v-for="post in posts">
       <el-card style="max-width: 480px">
         <template #header>
-          <div class="card-header">
-            <span>{{ post.title }}</span>
+          <div class="card-header" style="font-size:15px;font-size:bold">
+            <a :href="post.url">{{ post.title }}</a>
           </div>
-          <el-badge v-for="tag in post.tags">
+          <el-button plain v-for="tag in post.tags">
             {{ tag }}
-          </el-badge>
+          </el-button>
         </template>
         <p>{{ post.content }}</p>
         <template #footer
-          ><el-icon><Calendar /></el-icon>
-          <p>{{ post.date.string }}</p></template
+          ><p align="right"><el-icon><Calendar /></el-icon>
+          <span>{{ post.date.string }}</span></p></template
         >
       </el-card>
     </div>

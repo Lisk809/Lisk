@@ -1,9 +1,7 @@
 <template>
   <div class="mt-15">
-    <p
-      class="first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-line:tracking-widest"
-    >
-      “ {{ word }}
+    <p class="word"
+    >“ {{ word }}
     </p>
     <p align="right">——{{ from }}</p>
   </div>
@@ -19,3 +17,11 @@ fetch('https://v1.hitokoto.cn/')
     from.value = data.from
   })
 </script>
+<style>
+.word::first-letter {
+  float:left;
+  margin-right:3px;
+  font-size:2rem;
+  font-weight:bold;
+}
+</style>
