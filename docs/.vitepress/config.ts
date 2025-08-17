@@ -110,6 +110,10 @@ export default defineConfig({
         link: '/intro'
       },
       {
+        text: '我推',
+        link: '/favors'
+      },
+      {
         text: 'Blog',
         items: [
           {
@@ -130,7 +134,11 @@ export default defineConfig({
           {
             text: 'Intro',
             link: '/intro'
-          }
+          },
+          {
+            text: '我推',
+            link: '/favors'
+          },
         ]
       },
       {
@@ -168,7 +176,7 @@ export default defineConfig({
     footer: {
       message:
         'Released under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> License.',
-      copyright: 'Copyright © 2024 Lisk'
+      copyright: `Copyright © ${(new Date()).getFullYear()} Lisk`
     },
 
     editLink: {

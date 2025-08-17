@@ -35,6 +35,7 @@ import Confetti from './components/Confetti.vue'
 import Intro from './components/Intro.vue'
 import Home from './Home.vue'
 import Word from './components/Words.vue'
+import Favors from './components/Favors.vue'
 import Hero from '../theme/Layout.vue'
 import NCard from './components/NCard.vue'
 
@@ -65,6 +66,7 @@ export default {
     app.component('NCard', NCard)
     app.component('Intro', Intro)
     app.component('Home', Home)
+    app.component('Favors', Favors)
     app.use(TwoslashFloatingVue as unknown as Plugin)
     app.use(NolebaseGitChangelogPlugin)
     app.provide(InjectionKey, {
