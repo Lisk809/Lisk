@@ -11,7 +11,7 @@ head:
       content: Lisk, Blog, 前端
 hero:
   name: Lisk
-  text: 非著名前端艺术家
+  text: Nobody's 小站
   tagline: A new front-end developer who loves life, programs and poetry.
   image:
     src: /lisk.png
@@ -30,18 +30,22 @@ features:
   - icon:
       src: /intp.png
     title: INTP-T
-    details: 药水姐INTP-T捏
+    details: intp 但也会很高兴认识你🥰
   - icon:
       src: /frieren.jpeg
     title: 二次元
-    details: 爱看无职转生，孤独摇滚，中二病也要恋爱，葬送的芙莉莲。洛琪希，芙莉莲一生挚推
+    details: 基本无雷点，脾气好，各种尊重，欢迎扩列(„• ֊ •„)੭
   - icon: 📜
     title: 高中牲✧٩(ˊω`*)و✧
-    details: 立志考上计科985
+    details: 不定时出狱
   - icon: 🎻
     title: 小提琴萌新
     details: 浅学中...
 ---
+::: tip
+近期文章📃
+:::
+<Home />
 <style>
 :root {
   --vp-home-hero-name-color: transparent;

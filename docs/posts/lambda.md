@@ -1,3 +1,14 @@
+---
+date: 2025-8-16
+title: "λ演算"
+content: "λ演算：邱奇提出的函数式编程基础，通过变量、λ抽象和应用实现图灵完备计算"
+author: Lisk
+category: Tutorial
+tags:
+  - maths
+  - web development
+comment: false
+---
 # $\lambda 演算$
 
 ## 简介
