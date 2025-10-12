@@ -119,7 +119,11 @@ export default defineConfig({
           {
             text: 'lambda 演算',
             link: '/posts/lambda'
-          }
+          },
+	  {
+	    text: '下载pdf',
+	    link: '/downloads'
+	  }
         ]
       }
     ],
