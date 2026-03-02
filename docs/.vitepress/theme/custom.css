@@ -1,15 +1,15 @@
 @import './style/font.css';
-@import './style/custom-block.css';
-@import './style/vp-code-group.css';
+/*@import './style/custom-block.css';*/
+/*@import './style/vp-code-group.css';*/
 @import './style/var.css';
 @import './style/main.css';
 
 .VPHomeHero .main .text,
 .VPHomeHero .main .name span {
-  --tw-gradient-from: #99d3fb;
-  --tw-gradient-via: #a1b8fc;
+  --tw-gradient-from: #A85E38;
+  --tw-gradient-via: #E8A87C;
   /* 中间颜色点 */
-  --tw-gradient-to: #ebc4fb;
+  --tw-gradient-to: #CF7C52;
   --tw-gradient-stops:
     var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to);
   background-image: linear-gradient(to right, var(--tw-gradient-stops));

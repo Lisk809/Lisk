@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     .container {
       max-width: 1200px;
       width: 100%;

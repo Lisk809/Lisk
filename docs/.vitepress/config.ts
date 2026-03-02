@@ -18,7 +18,7 @@ import {
   groupIconVitePlugin
 } from 'vitepress-plugin-group-icons'
 import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
-
+import { codeWindowPlugin } from './plugins/codeWindow'
 import { qq, bilibili, npm } from './icons.ts'
 import { join } from 'node:path'
 
@@ -38,7 +38,7 @@ export default defineConfig({
       'meta',
       {
         name: 'theme-color',
-        content: '#88619A'
+        content: '#A85E38'
       }
     ]
   ],
@@ -95,6 +95,7 @@ export default defineConfig({
       md.use(InlineLinkPreviewElementTransform)
       // 代码组图标
       md.use(groupIconMdPlugin)
+      md.use(codeWindowPlugin)
     },
     codeTransformers: [transformerTwoslash()]
   },

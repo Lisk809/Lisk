@@ -40,6 +40,7 @@ import Hero from '../theme/Layout.vue'
 import NCard from './components/NCard.vue'
 
 import './custom.css'
+import './style.css'
 export default {
   extends: DefaultTheme,
   Layout: () => {
