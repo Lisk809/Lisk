@@ -112,6 +112,10 @@ export default defineConfig({
         link: "/favors",
       },
       {
+        text: "suzume",
+        link: "/suzume",
+      },
+      {
         text: "Blog",
         items: [
           {
@@ -149,6 +153,10 @@ export default defineConfig({
           {
             text: "我推",
             link: "/favors",
+          },
+          {
+            text: "suzume",
+            link: "/suzume",
           },
         ],
       },

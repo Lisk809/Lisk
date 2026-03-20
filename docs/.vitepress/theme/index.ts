@@ -38,6 +38,7 @@ import Word from './components/Words.vue'
 import Favors from './components/Favors.vue'
 import Hero from '../theme/Layout.vue'
 import NCard from './components/NCard.vue'
+import SuzumeSticker from '../../components/SuzumeSticker.vue'
 
 import './custom.css'
 import './style.css'
@@ -68,6 +69,7 @@ export default {
     app.component('Intro', Intro)
     app.component('Home', Home)
     app.component('Favors', Favors)
+    app.component('SuzumeSticker', SuzumeSticker)
     app.use(TwoslashFloatingVue as unknown as Plugin)
     app.use(NolebaseGitChangelogPlugin)
     app.provide(InjectionKey, {
