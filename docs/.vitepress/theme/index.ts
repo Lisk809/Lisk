@@ -38,7 +38,7 @@ import Word from './components/Words.vue'
 import Favors from './components/Favors.vue'
 import Hero from '../theme/Layout.vue'
 import NCard from './components/NCard.vue'
-import SuzumeSticker from '../../components/SuzumeSticker.vue'
+import SuzumeSticker from './components/SuzumeSticker.vue'
 
 import './custom.css'
 import './style.css'
